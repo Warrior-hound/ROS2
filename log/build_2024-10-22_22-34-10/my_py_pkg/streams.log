@@ -1,0 +1,26 @@
+[1.771s] Invoking command in '/home/krishil/ros2_ws/src/my_py_pkg': PYTHONPATH=/home/krishil/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/krishil/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/krishil/ros2_ws/build/my_py_pkg/build install --record /home/krishil/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed install_data
+[2.121s] running egg_info
+[2.123s] writing ../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO
+[2.135s] writing dependency_links to ../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt
+[2.136s] writing entry points to ../../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt
+[2.137s] writing requirements to ../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt
+[2.138s] writing top-level names to ../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt
+[2.140s] reading manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[2.157s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[2.158s] running build
+[2.158s] running build_py
+[2.162s] running install
+[2.163s] running install_lib
+[2.166s] running install_data
+[2.167s] running install_egg_info
+[2.170s] removing '/home/krishil/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[2.172s] Copying ../../build/my_py_pkg/my_py_pkg.egg-info to /home/krishil/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg-0.0.0-py3.10.egg-info
+[2.195s] running install_scripts
+[2.225s] Installing add_two_ints_client_no_oop script to /home/krishil/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.237s] Installing add_two_ints_client_oop script to /home/krishil/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.239s] Installing add_two_ints_server script to /home/krishil/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.239s] Installing number_counter script to /home/krishil/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.240s] Installing pynode script to /home/krishil/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.241s] Installing robot_news_station script to /home/krishil/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.243s] writing list of installed files to '/home/krishil/ros2_ws/build/my_py_pkg/install.log'
+[2.276s] Invoked command in '/home/krishil/ros2_ws/src/my_py_pkg' returned '0': PYTHONPATH=/home/krishil/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/krishil/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/krishil/ros2_ws/build/my_py_pkg/build install --record /home/krishil/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed install_data

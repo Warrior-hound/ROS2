@@ -1,0 +1,28 @@
+[0.045s] Invoking command in '/home/krishil/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/krishil/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/krishil/ros2_ws/build/my_cpp_pkg -- -j3 -l3
+[0.183s] [35m[1mConsolidate compiler generated dependencies of target cpp_subscriber[0m
+[0.257s] [ 25%] [32mBuilding CXX object CMakeFiles/cpp_subscriber.dir/src/robot_news_listener.cpp.o[0m
+[0.261s] [ 75%] Built target cpp_node
+[10.391s] [100%] [32m[1mLinking CXX executable cpp_subscriber[0m
+[10.878s] [100%] Built target cpp_subscriber
+[10.912s] Invoked command in '/home/krishil/ros2_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/krishil/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/krishil/ros2_ws/build/my_cpp_pkg -- -j3 -l3
+[11.051s] Invoking command in '/home/krishil/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/krishil/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/krishil/ros2_ws/build/my_cpp_pkg
+[11.074s] -- Install configuration: ""
+[11.074s] -- Execute custom install script
+[11.075s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_node
+[11.075s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_subscriber
+[11.075s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_cpp_pkg
+[11.075s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_cpp_pkg
+[11.078s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.sh
+[11.078s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.dsv
+[11.078s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.sh
+[11.078s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.dsv
+[11.078s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.bash
+[11.078s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.sh
+[11.080s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.zsh
+[11.087s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.dsv
+[11.087s] -- Symlinking: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv
+[11.087s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/packages/my_cpp_pkg
+[11.088s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig.cmake
+[11.088s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig-version.cmake
+[11.088s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.xml
+[11.090s] Invoked command in '/home/krishil/ros2_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/krishil/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/krishil/ros2_ws/build/my_cpp_pkg

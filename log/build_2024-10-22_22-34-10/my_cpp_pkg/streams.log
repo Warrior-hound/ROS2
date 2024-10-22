@@ -1,0 +1,62 @@
+[0.103s] Invoking command in '/home/krishil/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/krishil/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/krishil/ros2_ws/build/my_cpp_pkg -- -j3 -l3
+[0.596s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.998s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.082s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[1.353s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.426s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.464s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.515s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.622s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.805s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.820s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.081s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.403s] -- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)
+[2.689s] -- Configuring done
+[2.859s] -- Generating done
+[2.866s] -- Build files have been written to: /home/krishil/ros2_ws/build/my_cpp_pkg
+[2.943s] [35m[1mConsolidate compiler generated dependencies of target cpp_node[0m
+[2.976s] [ 16%] Built target cpp_node
+[2.985s] [35m[1mConsolidate compiler generated dependencies of target cpp_subscriber[0m
+[2.991s] [35m[1mConsolidate compiler generated dependencies of target number_publisher[0m
+[3.028s] [35m[1mConsolidate compiler generated dependencies of target add_two_ints_server[0m
+[3.046s] [ 33%] Built target cpp_subscriber
+[3.054s] [ 50%] Built target number_publisher
+[3.068s] [ 66%] Built target add_two_ints_server
+[3.094s] [35m[1mConsolidate compiler generated dependencies of target add_two_ints_client_no_oop[0m
+[3.138s] [ 75%] [32mBuilding CXX object CMakeFiles/add_two_ints_client_oop.dir/src/add_two_ints_client_oop.cpp.o[0m
+[3.154s] [ 91%] Built target add_two_ints_client_no_oop
+[6.790s] [01m[K/home/krishil/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_oop.cpp:[m[K In member function ‘[01m[Kvoid AddTwoIntsClientNode::callAddTwoIntsService(int, int)[m[K’:
+[6.791s] [01m[K/home/krishil/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_oop.cpp:10:40:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ka[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.791s]    10 |         void callAddTwoIntsService([01;35m[Kint a[m[K, int b) {
+[6.791s]       |                                    [01;35m[K~~~~^[m[K
+[6.791s] [01m[K/home/krishil/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_oop.cpp:10:47:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kb[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.791s]    10 |         void callAddTwoIntsService(int a, [01;35m[Kint b[m[K) {
+[6.791s]       |                                           [01;35m[K~~~~^[m[K
+[8.575s] [100%] [32m[1mLinking CXX executable add_two_ints_client_oop[0m
+[9.672s] [100%] Built target add_two_ints_client_oop
+[9.710s] Invoked command in '/home/krishil/ros2_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/krishil/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/krishil/ros2_ws/build/my_cpp_pkg -- -j3 -l3
+[9.965s] Invoking command in '/home/krishil/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/krishil/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/krishil/ros2_ws/build/my_cpp_pkg
+[10.002s] -- Install configuration: ""
+[10.002s] -- Execute custom install script
+[10.014s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_node
+[10.015s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_subscriber
+[10.015s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/number_publisher
+[10.015s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/add_two_ints_server
+[10.026s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/add_two_ints_client_no_oop
+[10.046s] -- Symlinking: /home/krishil/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/add_two_ints_client_oop
+[10.048s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_cpp_pkg
+[10.052s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_cpp_pkg
+[10.055s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.sh
+[10.066s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.dsv
+[10.067s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.sh
+[10.067s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.dsv
+[10.068s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.bash
+[10.068s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.sh
+[10.072s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.zsh
+[10.072s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.dsv
+[10.072s] -- Symlinking: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv
+[10.126s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/packages/my_cpp_pkg
+[10.126s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig.cmake
+[10.126s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig-version.cmake
+[10.150s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.xml
+[10.156s] Invoked command in '/home/krishil/ros2_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/krishil/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/krishil/ros2_ws/build/my_cpp_pkg

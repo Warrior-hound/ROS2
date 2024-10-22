@@ -1,0 +1,33 @@
+[0.937s] Invoking command in '/home/krishil/ros2_ws/src/my_py_pkg': PYTHONPATH=/home/krishil/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/krishil/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/krishil/ros2_ws/build/my_py_pkg/build install --record /home/krishil/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed install_data
+[1.191s] running egg_info
+[1.192s] creating ../../build/my_py_pkg/my_py_pkg.egg-info
+[1.194s] writing ../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO
+[1.195s] writing dependency_links to ../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt
+[1.195s] writing entry points to ../../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt
+[1.195s] writing requirements to ../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt
+[1.195s] writing top-level names to ../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt
+[1.195s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[1.195s] reading manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[1.195s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[1.195s] running build
+[1.195s] running build_py
+[1.195s] creating /home/krishil/ros2_ws/build/my_py_pkg/build
+[1.195s] creating /home/krishil/ros2_ws/build/my_py_pkg/build/lib
+[1.198s] creating /home/krishil/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[1.198s] copying my_py_pkg/__init__.py -> /home/krishil/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[1.198s] running install
+[1.198s] running install_lib
+[1.199s] creating /home/krishil/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[1.199s] copying /home/krishil/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/__init__.py -> /home/krishil/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[1.199s] byte-compiling /home/krishil/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/__init__.py to __init__.cpython-310.pyc
+[1.199s] running install_data
+[1.201s] creating /home/krishil/ros2_ws/install/my_py_pkg/share/ament_index
+[1.201s] creating /home/krishil/ros2_ws/install/my_py_pkg/share/ament_index/resource_index
+[1.201s] creating /home/krishil/ros2_ws/install/my_py_pkg/share/ament_index/resource_index/packages
+[1.201s] copying resource/my_py_pkg -> /home/krishil/ros2_ws/install/my_py_pkg/share/ament_index/resource_index/packages
+[1.201s] copying package.xml -> /home/krishil/ros2_ws/install/my_py_pkg/share/my_py_pkg
+[1.202s] running install_egg_info
+[1.220s] Copying ../../build/my_py_pkg/my_py_pkg.egg-info to /home/krishil/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg-0.0.0-py3.10.egg-info
+[1.220s] running install_scripts
+[1.229s] writing list of installed files to '/home/krishil/ros2_ws/build/my_py_pkg/install.log'
+[1.253s] Invoked command in '/home/krishil/ros2_ws/src/my_py_pkg' returned '0': PYTHONPATH=/home/krishil/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/krishil/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/krishil/ros2_ws/build/my_py_pkg/build install --record /home/krishil/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed install_data

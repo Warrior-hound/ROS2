@@ -1,0 +1,7 @@
+[01m[K/home/krishil/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_oop.cpp:[m[K In member function ‘[01m[Kvoid AddTwoIntsClientNode::callAddTwoIntsService(int, int)[m[K’:
+[01m[K/home/krishil/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_oop.cpp:10:40:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ka[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   10 |         void callAddTwoIntsService([01;35m[Kint a[m[K, int b) {
+      |                                    [01;35m[K~~~~^[m[K
+[01m[K/home/krishil/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_oop.cpp:10:47:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kb[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   10 |         void callAddTwoIntsService(int a, [01;35m[Kint b[m[K) {
+      |                                           [01;35m[K~~~~^[m[K

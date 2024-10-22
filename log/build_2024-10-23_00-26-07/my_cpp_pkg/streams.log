@@ -1,0 +1,60 @@
+[0.023s] Invoking command in '/home/krishil/ros2_ws/build/my_cpp_pkg': AMENT_PREFIX_PATH=/home/krishil/ros2_ws/install/my_robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/krishil/ros2_ws/install/my_robot_interfaces:/home/krishil/ros2_ws/install/my_cpp_pkg:/home/krishil/ros2_ws/install/my_py_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/krishil/ros2_ws/install/my_robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/krishil/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/krishil/ros2_ws/build/my_cpp_pkg -- -j3 -l3
+[0.088s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.266s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.273s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.297s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.299s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.304s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.313s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.324s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.361s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.373s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.491s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.536s] -- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)
+[0.578s] -- Found my_robot_interfaces: 0.0.0 (/home/krishil/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake)
+[0.745s] -- Configuring done
+[0.829s] -- Generating done
+[0.829s] -- Build files have been written to: /home/krishil/ros2_ws/build/my_cpp_pkg
+[0.873s] [35m[1mConsolidate compiler generated dependencies of target cpp_subscriber[0m
+[0.904s] [ 14%] Built target cpp_subscriber
+[0.923s] [35m[1mConsolidate compiler generated dependencies of target cpp_node[0m
+[0.924s] [35m[1mConsolidate compiler generated dependencies of target number_publisher[0m
+[0.928s] [35m[1mConsolidate compiler generated dependencies of target add_two_ints_server[0m
+[0.951s] [ 28%] Built target add_two_ints_server
+[0.953s] [ 42%] Built target cpp_node
+[0.998s] [ 57%] Built target number_publisher
+[1.001s] [35m[1mConsolidate compiler generated dependencies of target add_two_ints_client_oop[0m
+[1.018s] [35m[1mConsolidate compiler generated dependencies of target hw_status_publisher[0m
+[1.022s] [ 71%] Built target add_two_ints_client_oop
+[1.045s] [ 78%] [32mBuilding CXX object CMakeFiles/hw_status_publisher.dir/src/hw_status_publisher.cpp.o[0m
+[1.046s] [35m[1mConsolidate compiler generated dependencies of target add_two_ints_client_no_oop[0m
+[1.079s] [ 92%] Built target add_two_ints_client_no_oop
+[5.054s] [100%] [32m[1mLinking CXX executable hw_status_publisher[0m
+[5.443s] [100%] Built target hw_status_publisher
+[5.476s] Invoked command in '/home/krishil/ros2_ws/build/my_cpp_pkg' returned '0': AMENT_PREFIX_PATH=/home/krishil/ros2_ws/install/my_robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/krishil/ros2_ws/install/my_robot_interfaces:/home/krishil/ros2_ws/install/my_cpp_pkg:/home/krishil/ros2_ws/install/my_py_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/krishil/ros2_ws/install/my_robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/krishil/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/krishil/ros2_ws/build/my_cpp_pkg -- -j3 -l3
+[5.613s] Invoking command in '/home/krishil/ros2_ws/build/my_cpp_pkg': AMENT_PREFIX_PATH=/home/krishil/ros2_ws/install/my_robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/krishil/ros2_ws/install/my_robot_interfaces:/home/krishil/ros2_ws/install/my_cpp_pkg:/home/krishil/ros2_ws/install/my_py_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/krishil/ros2_ws/install/my_robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/krishil/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/krishil/ros2_ws/build/my_cpp_pkg
+[5.623s] -- Install configuration: ""
+[5.625s] -- Execute custom install script
+[5.625s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_node
+[5.625s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_subscriber
+[5.625s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/number_publisher
+[5.625s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/add_two_ints_server
+[5.626s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/add_two_ints_client_no_oop
+[5.626s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/add_two_ints_client_oop
+[5.627s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/hw_status_publisher
+[5.627s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_cpp_pkg
+[5.627s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_cpp_pkg
+[5.627s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.sh
+[5.627s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.dsv
+[5.627s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.sh
+[5.627s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.dsv
+[5.627s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.bash
+[5.628s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.sh
+[5.628s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.zsh
+[5.628s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.dsv
+[5.628s] -- Symlinking: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv
+[5.641s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/packages/my_cpp_pkg
+[5.641s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig.cmake
+[5.641s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig-version.cmake
+[5.641s] -- Up-to-date symlink: /home/krishil/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.xml
+[5.647s] Invoked command in '/home/krishil/ros2_ws/build/my_cpp_pkg' returned '0': AMENT_PREFIX_PATH=/home/krishil/ros2_ws/install/my_robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/krishil/ros2_ws/install/my_robot_interfaces:/home/krishil/ros2_ws/install/my_cpp_pkg:/home/krishil/ros2_ws/install/my_py_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/krishil/ros2_ws/install/my_robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/krishil/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/krishil/ros2_ws/build/my_cpp_pkg

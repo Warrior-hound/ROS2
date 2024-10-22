@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from my_robot_interfaces/msg/LedStatus.msg
+// generated code does not contain a copyright notice
+
+
+module my_robot_interfaces {
+  module msg {
+    typedef int32 int32__3[3];
+    struct LedStatus {
+      int32__3 led_status;
+    };
+  };
+};
