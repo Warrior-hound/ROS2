@@ -1,0 +1,3 @@
+bool move   # Should it move
+---
+bool success    # RESULT: SUCCESS message.

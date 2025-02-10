@@ -1,0 +1,7 @@
+log/
+build/
+install/
+
+# Ignore .vscode directory
+.vscode/
+**/models/

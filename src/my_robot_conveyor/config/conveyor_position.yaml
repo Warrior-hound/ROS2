@@ -1,0 +1,9 @@
+controller_manager:
+  ros_parameters:
+    update_rate: 100
+
+  joint_position_controller:
+    type: joint_state_controller/JointStateController
+
+  joint_velocity_controller:
+    type: joint_state_controller/JointStateController

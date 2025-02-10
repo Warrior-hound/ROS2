@@ -1,0 +1,387 @@
+<?xml version="1.0" ?>
+
+<!--
+
+# ===================================== COPYRIGHT ===================================== #
+#                                                                                       #
+#  IFRA (Intelligent Flexible Robotics and Assembly) Group, CRANFIELD UNIVERSITY        #
+#  Created on behalf of the IFRA Group at Cranfield University, United Kingdom          #
+#  E-mail: IFRA@cranfield.ac.uk                                                         #
+#                                                                                       #
+#  Licensed under the Apache-2.0 License.                                               #
+#  You may not use this file except in compliance with the License.                     #
+#  You may obtain a copy of the License at: http://www.apache.org/licenses/LICENSE-2.0  #
+#                                                                                       #
+#  Unless required by applicable law or agreed to in writing, software distributed      #
+#  under the License is distributed on an "as-is" basis, without warranties or          #
+#  conditions of any kind, either express or implied. See the License for the specific  #
+#  language governing permissions and limitations under the License.                    #
+#                                                                                       #
+#  IFRA Group - Cranfield University                                                    #
+#  AUTHORS: Mikel Bueno Viso - Mikel.Bueno-Viso@cranfield.ac.uk                         #
+#           Dr. Seemal Asif  - s.asif@cranfield.ac.uk                                   #
+#           Prof. Phil Webb  - p.f.webb@cranfield.ac.uk                                 #
+#                                                                                       #
+#  Date: June, 2023.                                                                    #
+#                                                                                       #
+# ===================================== COPYRIGHT ===================================== #
+
+# ======= CITE OUR WORK ======= #
+# You can cite our work with the following statement:
+# IFRA-Cranfield (2023) Gazebo-ROS2 Conveyor Belt Plugin. URL: https://github.com/IFRA-Cranfield/IFRA_ConveyorBelt.
+
+-->
+
+<sdf version="1.4">
+
+  <world name="default">
+
+    <!-- WORLD COMPONENTS: STANDARD -->
+
+    <gravity>0 0 -9.8</gravity>
+
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <scene>
+      <shadows>0</shadows>
+    </scene>
+
+    <!-- Main Conveyor -->
+    <include>
+      <name>conveyor_belt</name>
+      <pose>0 0 0 0 0 0</pose>
+      <uri>model://main_line</uri>
+    </include>
+
+    <!-- Zone 1 -->
+    
+        <include>
+      <name>sb_zone1</name>
+      <pose>-29.945 -1.36 0 0 0 0</pose>
+      <uri>model://secondary_line/secondary_line_secondary_line_1</uri>
+    </include>
+    <include>
+      <name>secondary_belt_2</name>
+      <pose>-42.5 -1.02 0 0 0 0</pose>
+      <uri>model://secondary_line_2/secondary_line_2_secondary_line_2_1</uri>
+    </include>
+    <include>
+      <name>medium</name>
+      <pose>-36.575 -2.03 0 0 0 0</pose>
+      <uri>model://medium_line/medium_line_medium_line1</uri>
+    </include>
+    <include>
+      <name>pusher_1</name>
+      <pose>-42.5 0.6 0 0 0 0</pose>
+      <uri>model://pusher/pusher_pusher_1</uri>
+    </include>
+    <include>
+      <name>scanner_1</name>
+      <pose>-42.955 -1.66 0 0 0 1.393102</pose>
+      <uri>model://scanner/scanner_scanner_1</uri>
+    </include>
+    <include>
+      <name>ir_1</name>
+      <pose>-42.5 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir1</uri>
+      <namespace>ir_1</namespace>
+    </include>
+    <include>
+      <name>ir_2</name>
+      <pose>-40.44 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir2</uri>
+      <namespace>ir_2</namespace>
+    </include>
+    <include>
+      <name>ir_3</name>
+      <pose>-36.582 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir3</uri>
+      <namespace>ir_3</namespace>
+    </include>
+    <include>
+      <name>ir_4</name>
+      <pose>-33.603 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir4</uri>
+      <namespace>ir_4</namespace>
+    </include>
+    <include>
+      <name>ir_5</name>
+      <pose>-31.54 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir5</uri>
+      <namespace>ir_5</namespace>
+    </include>
+    <include>
+      <name>ir_6</name>
+      <pose>-29.945 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir6</uri>
+      <namespace>ir_6</namespace>
+    </include>
+
+    <!-- Zone 2 -->
+
+      <include>
+      <name>sb_zone2</name>
+      <pose>-12.145 -1.36 0 0 0 0</pose>
+      <uri>model://secondary_line/secondary_line_secondary_line_2</uri>
+    </include>
+    <include>
+      <name>secondary_belt_2_2</name>
+      <pose>-24.7 -1.02 0 0 0 0</pose>
+      <uri>model://secondary_line_2/secondary_line_2_secondary_line_2_2</uri>
+    </include>
+    <include>
+      <name>medium_2</name>
+      <pose>-18.775000000000002 -2.03 0 0 0 0</pose>
+      <uri>model://medium_line/medium_line_medium_line2</uri>
+    </include>
+    <include>
+      <name>pusher_2</name>
+      <pose>-24.7 0.6 0 0 0 0</pose>
+      <uri>model://pusher/pusher_pusher_2</uri>
+    </include>
+    <include>
+      <name>scanner_2</name>
+      <pose>-25.154999999999998 -1.66 0 0 0 1.393102</pose>
+      <uri>model://scanner/scanner_scanner_2</uri>
+    </include>
+    <include>
+      <name>ir_7</name>
+      <pose>-24.7 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir7</uri>
+      <namespace>ir_7</namespace>
+    </include>
+    <include>
+      <name>ir_8</name>
+      <pose>-22.639999999999997 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir8</uri>
+      <namespace>ir_8</namespace>
+    </include>
+    <include>
+      <name>ir_9</name>
+      <pose>-18.782 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir9</uri>
+      <namespace>ir_9</namespace>
+    </include>
+    <include>
+      <name>ir_10</name>
+      <pose>-15.803 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir10</uri>
+      <namespace>ir_10</namespace>
+    </include>
+    <include>
+      <name>ir_11</name>
+      <pose>-13.739999999999998 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir11</uri>
+      <namespace>ir_11</namespace>
+    </include>
+    <include>
+      <name>ir_12</name>
+      <pose>-12.145 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir12</uri>
+      <namespace>ir_12</namespace>
+    </include>
+
+    <!-- Zone 3 -->
+
+        <include>
+      <name>sb_zone3</name>
+      <pose>5.655000000000001 -1.36 0 0 0 0</pose>
+      <uri>model://secondary_line/secondary_line_secondary_line_3</uri>
+    </include>
+    <include>
+      <name>secondary_belt_2_3</name>
+      <pose>-6.899999999999999 -1.02 0 0 0 0</pose>
+      <uri>model://secondary_line_2/secondary_line_2_secondary_line_2_3</uri>
+    </include>
+    <include>
+      <name>medium_3</name>
+      <pose>-0.9750000000000014 -2.03 0 0 0 0</pose>
+      <uri>model://medium_line/medium_line_medium_line3</uri>
+    </include>
+    <include>
+      <name>pusher_3</name>
+      <pose>-6.899999999999999 0.6 0 0 0 0</pose>
+      <uri>model://pusher/pusher_pusher_3</uri>
+    </include>
+    <include>
+      <name>scanner_3</name>
+      <pose>-7.354999999999997 -1.66 0 0 0 1.393102</pose>
+      <uri>model://scanner/scanner_scanner_3</uri>
+    </include>
+    <include>
+      <name>ir_13</name>
+      <pose>-6.899999999999999 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir13</uri>
+      <namespace>ir_13</namespace>
+    </include>
+    <include>
+      <name>ir_14</name>
+      <pose>-4.839999999999996 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir14</uri>
+      <namespace>ir_14</namespace>
+    </include>
+    <include>
+      <name>ir_15</name>
+      <pose>-0.9819999999999993 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir15</uri>
+      <namespace>ir_15</namespace>
+    </include>
+    <include>
+      <name>ir_16</name>
+      <pose>1.9969999999999999 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir16</uri>
+      <namespace>ir_16</namespace>
+    </include>
+    <include>
+      <name>ir_17</name>
+      <pose>4.060000000000002 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir17</uri>
+      <namespace>ir_17</namespace>
+    </include>
+    <include>
+      <name>ir_18</name>
+      <pose>5.655000000000001 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir18</uri>
+      <namespace>ir_18</namespace>
+    </include>
+
+    <!-- Zone 4-->
+
+     <include>
+      <name>sb_zone4</name>
+      <pose>23.455000000000005 -1.36 0 0 0 0</pose>
+      <uri>model://secondary_line/secondary_line_secondary_line_4</uri>
+    </include>
+    <include>
+      <name>secondary_belt_2_4</name>
+      <pose>10.900000000000006 -1.02 0 0 0 0</pose>
+      <uri>model://secondary_line_2/secondary_line_2_secondary_line_2_4</uri>
+    </include>
+    <include>
+      <name>medium_4</name>
+      <pose>16.825000000000003 -2.03 0 0 0 0</pose>
+      <uri>model://medium_line/medium_line_medium_line4</uri>
+    </include>
+    <include>
+      <name>pusher_4</name>
+      <pose>10.900000000000006 0.6 0 0 0 0</pose>
+      <uri>model://pusher/pusher_pusher_4</uri>
+    </include>
+    <include>
+      <name>scanner_4</name>
+      <pose>10.445000000000007 -1.66 0 0 0 1.393102</pose>
+      <uri>model://scanner/scanner_scanner_4</uri>
+    </include>
+    <include>
+      <name>ir_19</name>
+      <pose>10.900000000000006 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir19</uri>
+      <namespace>ir_19</namespace>
+    </include>
+    <include>
+      <name>ir_20</name>
+      <pose>12.960000000000008 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir20</uri>
+      <namespace>ir_20</namespace>
+    </include>
+    <include>
+      <name>ir_21</name>
+      <pose>16.818000000000005 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir21</uri>
+      <namespace>ir_21</namespace>
+    </include>
+    <include>
+      <name>ir_22</name>
+      <pose>19.797000000000004 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir22</uri>
+      <namespace>ir_22</namespace>
+    </include>
+    <include>
+      <name>ir_23</name>
+      <pose>21.860000000000007 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir23</uri>
+      <namespace>ir_23</namespace>
+    </include>
+    <include>
+      <name>ir_24</name>
+      <pose>23.455000000000005 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir24</uri>
+      <namespace>ir_24</namespace>
+    </include>
+
+    <!-- Zone 5 -->
+
+    <include>
+      <name>sb_zone5</name>
+      <pose>41.255 -1.36 0 0 0 0</pose>
+      <uri>model://secondary_line/secondary_line_secondary_line_5</uri>
+    </include>
+    <include>
+      <name>secondary_belt_2_5</name>
+      <pose>28.700000000000003 -1.02 0 0 0 0</pose>
+      <uri>model://secondary_line_2/secondary_line_2_secondary_line_2_5</uri>
+    </include>
+    <include>
+      <name>medium_5</name>
+      <pose>34.625 -2.03 0 0 0 0</pose>
+      <uri>model://medium_line/medium_line_medium_line5</uri>
+    </include>
+    <include>
+      <name>pusher_5</name>
+      <pose>28.700000000000003 0.6 0 0 0 0</pose>
+      <uri>model://pusher/pusher_pusher_5</uri>
+    </include>
+    <include>
+      <name>scanner_5</name>
+      <pose>28.245000000000005 -1.66 0 0 0 1.393102</pose>
+      <uri>model://scanner/scanner_scanner_5</uri>
+    </include>
+    <include>
+      <name>ir_25</name>
+      <pose>28.700000000000003 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir25</uri>
+      <namespace>ir_25</namespace>
+    </include>
+    <include>
+      <name>ir_26</name>
+      <pose>30.760000000000005 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir26</uri>
+      <namespace>ir_26</namespace>
+    </include>
+    <include>
+      <name>ir_27</name>
+      <pose>34.618 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir27</uri>
+      <namespace>ir_27</namespace>
+    </include>
+    <include>
+      <name>ir_28</name>
+      <pose>37.597 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir28</uri>
+      <namespace>ir_28</namespace>
+    </include>
+    <include>
+      <name>ir_29</name>
+      <pose>39.660000000000004 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir29</uri>
+      <namespace>ir_29</namespace>
+    </include>
+    <include>
+      <name>ir_30</name>
+      <pose>41.255 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir30</uri>
+      <namespace>ir_30</namespace>
+    </include>
+  
+    
+
+
+  </world>
+
+</sdf>

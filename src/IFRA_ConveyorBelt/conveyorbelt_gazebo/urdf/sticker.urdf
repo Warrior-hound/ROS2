@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<robot name="box">
+
+  <link name="box">
+    <collision>
+      <origin xyz= "0.0 0.0 0.0" rpy="0 0 0"/>
+      <geometry>
+        <box size= "0.65 0.5 0.003" />
+      </geometry>
+      <surface>
+        <contact>
+          <collide_without_contact>false</collide_without_contact>
+        </contact>
+      </surface>
+    </collision>
+
+    <visual>
+      <origin xyz= "0.0 0.0 0.0" rpy="0 0 0"/>
+      <geometry>
+        <box size= "0.65 0.5 0.003" />
+      </geometry>
+    </visual>
+
+    <!-- <inertial>
+      <origin xyz= "0.0 0.0 0.0" rpy="0 0 0"/>
+      <mass value= "99.45" />
+      <inertia
+        ixx="5" ixy="0.0"  ixz="0.0"
+        iyy="6.4" iyz="0.0"
+        izz="5.57" />
+    </inertial> -->
+    <inertial>
+      <origin xyz= "0.0 0.0 0.0" rpy="0 0 0"/>
+      <mass value= "0.001" />
+      <inertia
+        ixx="0" ixy="0.0"  ixz="0.0"
+        iyy="0" iyz="0.0"
+        izz="0" />
+    </inertial>
+  </link>
+
+  <gazebo reference="box">
+    <material>Gazebo/Black</material>
+    <mu1>20000.0</mu1> 
+    <mu2>20000.0</mu2>
+    <selfCollide>false</selfCollide> 
+    <static>true</static>
+  </gazebo>
+
+</robot>

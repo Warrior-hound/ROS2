@@ -1,0 +1,161 @@
+<?xml version="1.0" ?>
+
+<!--
+
+# ===================================== COPYRIGHT ===================================== #
+#                                                                                       #
+#  IFRA (Intelligent Flexible Robotics and Assembly) Group, CRANFIELD UNIVERSITY        #
+#  Created on behalf of the IFRA Group at Cranfield University, United Kingdom          #
+#  E-mail: IFRA@cranfield.ac.uk                                                         #
+#                                                                                       #
+#  Licensed under the Apache-2.0 License.                                               #
+#  You may not use this file except in compliance with the License.                     #
+#  You may obtain a copy of the License at: http://www.apache.org/licenses/LICENSE-2.0  #
+#                                                                                       #
+#  Unless required by applicable law or agreed to in writing, software distributed      #
+#  under the License is distributed on an "as-is" basis, without warranties or          #
+#  conditions of any kind, either express or implied. See the License for the specific  #
+#  language governing permissions and limitations under the License.                    #
+#                                                                                       #
+#  IFRA Group - Cranfield University                                                    #
+#  AUTHORS: Mikel Bueno Viso - Mikel.Bueno-Viso@cranfield.ac.uk                         #
+#           Dr. Seemal Asif  - s.asif@cranfield.ac.uk                                   #
+#           Prof. Phil Webb  - p.f.webb@cranfield.ac.uk                                 #
+#                                                                                       #
+#  Date: June, 2023.                                                                    #
+#                                                                                       #
+# ===================================== COPYRIGHT ===================================== #
+
+# ======= CITE OUR WORK ======= #
+# You can cite our work with the following statement:
+# IFRA-Cranfield (2023) Gazebo-ROS2 Conveyor Belt Plugin. URL: https://github.com/IFRA-Cranfield/IFRA_ConveyorBelt.
+
+-->
+
+<sdf version="1.4">
+
+  <world name="default">
+
+    <!-- WORLD COMPONENTS: STANDARD -->
+
+    <gravity>0 0 -9.8</gravity>
+
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <scene>
+      <shadows>0</shadows>
+    </scene>
+
+    <!-- Insert Conveyor Belt -->
+    <include>
+      <name>conveyor_belt</name>
+      <pose>0 0 0 0 0 0</pose>
+      <uri>model://main_line</uri>
+    </include>
+
+    <include>
+      <name>secondary_belt</name>
+      <pose>0 -1.36 0 0 0 0</pose>
+      <uri>model://secondary_line</uri>
+    </include>
+
+    <include>
+      <name>secondary_belt_2</name>
+      <pose>-12.555 -1.02 0 0 0 0</pose>
+      <uri>model://secondary_line_2</uri>
+    </include>
+
+    <include>
+      <name>medium</name>
+      <pose>-6.63 -2.03 0 0 0 0</pose>
+      <uri>model://medium_line</uri>
+    </include>
+
+    <include>
+      <name>ir_1</name>
+      <pose>-12.555 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir1</uri>
+      <namespace>ir_1</namespace>
+    </include>
+
+    <include>
+      <name>ir_2</name>
+      <pose>-10.495 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir2</uri>
+    </include>
+
+    <include>
+      <name>ir_3</name>
+      <pose>-6.637 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir3</uri>
+    </include>
+
+    <include>
+      <name>ir_4</name>
+      <pose>-3.658 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir4</uri>
+    </include>
+
+    <include>
+      <name>ir_5</name>
+      <pose>-1.595 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir5</uri>
+    </include>
+
+    <include>
+      <name>ir_6</name>
+      <pose>0 -3.08 0 0 0 0</pose>
+      <uri>model://ir/ir_ir6</uri>
+    </include>
+
+    <!-- <include>
+      <name>station_2</name>
+      <pose>-10.495 -3.08 0 0 0 0</pose>
+      <uri>model://stations</uri>
+    </include>
+
+    <include>
+      <name>station_3</name>
+      <pose>-6.637 -3.08 0 0 0 0</pose>
+      <uri>model://stations</uri>
+    </include>
+
+    <include>
+      <name>station_4</name>
+      <pose>-3.658 -3.08 0 0 0 0</pose>
+      <uri>model://stations</uri>
+    </include>
+
+    <include>
+      <name>station_5</name>
+      <pose>-1.595 -3.08 0 0 0 0</pose>
+      <uri>model://stations</uri>
+    </include>
+
+    <include>
+      <name>station_6</name>
+      <pose>0 -3.08 0 0 0 0</pose>
+      <uri>model://stations</uri>
+    </include> -->
+
+    <include>
+      <name>pusher_1</name>
+      <pose>-12.555 0.6 0 0 0 0</pose>
+      <uri>model://pusher</uri>
+    </include>
+
+    <include>
+      <name>scanner_1</name>
+      <pose>-13.01 -1.66 0 0 0 1.393102</pose>
+      <uri>model://scanner</uri>
+    </include>
+
+  </world>
+
+</sdf>

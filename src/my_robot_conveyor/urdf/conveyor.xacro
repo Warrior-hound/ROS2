@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+
+    <xacro:property name="conveyor_length" value="50"/>
+    <xacro:property name="conveyor_height" value="0.3" />
+    <xacro:property name="conveyor_width" value="0.7" />
+    
+    <link name="base_footprint" />
+
+
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <box size="${conveyor_length} ${conveyor_width} ${conveyor_height}" />
+            </geometry>
+            <origin xyz="0 0 ${conveyor_height / 2.0}" rpy="0 0 0" />
+            <material name="blue" />
+        </visual>
+        <collision>
+            <geometry>
+                <box size="${conveyor_length} ${conveyor_width} ${conveyor_height}" />
+            </geometry>
+             <origin xyz="0 0 ${conveyor_height / 2.0}" rpy="0 0 0" />
+        </collision>
+        <xacro:box_intertia m="300.0" l="${2*conveyor_length}" w="${2*conveyor_width}" h="${2*conveyor_height}" xyz="0 0 ${conveyor_height / 2.0}" rpy="0 0 0" />
+    </link>
+
+    <link name="base_moving">
+        <visual>
+            <geometry>
+                <box size="${conveyor_length} ${conveyor_width} ${conveyor_height}" />
+            </geometry>
+            <origin xyz="0 0 ${conveyor_height / 2.0}" rpy="0 0 0" />
+            <material name="blue" />
+        </visual>
+        <collision>
+            <geometry>
+                <box size="${conveyor_length} ${conveyor_width} ${conveyor_height}" />
+            </geometry>
+             <origin xyz="0 0 ${conveyor_height / 2.0}" rpy="0 0 0" />
+        </collision>
+        <xacro:box_intertia m="300.0" l="${2*conveyor_length}" w="${2*conveyor_width}" h="${2*conveyor_height}" xyz="0 0 ${conveyor_height / 2.0}" rpy="0 0 0" />
+    </link>
+  
+
+   <joint name="belt_fixed_joint" type="fixed">
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <parent link="base_footprint" />
+        <child link="base_link" />
+    </joint>
+
+    <joint name="belt_moving_joint" type="prismatic">
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <parent link="base_link" />
+        <child link="base_moving" />
+        <axis xyz="1 0 0" />
+        <limit lower="-${conveyor_length / 2}" upper="${conveyor_length / 2}" effort="100" velocity="0.5" />
+    </joint>
+
+      <transmission name="tran1">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="belt_moving_joint">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor1">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+
+
+    
+</robot>
